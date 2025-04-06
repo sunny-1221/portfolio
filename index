@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatiparthi Sunny | Web & App Developer | UI/UX Designer</title>
+    <link rel="icon" href="images/flash.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="glass-card">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Portfolio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Journey</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg">
+            <div class="bg-circle circle-1"></div>
+            <div class="bg-circle circle-2"></div>
+            <div class="bg-circle circle-3"></div>
+            <div class="bg-circle circle-4"></div>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h3 class="hero-subtitle">Hello, I'm</h3>
+                <h1 class="hero-title">Tatiparthi Sunny</h1>
+                <p class="hero-description">
+                    Web & App Developer | UI/UX Designer specializing in creating beautiful, 
+                    functional digital experiences with clean code and intuitive interfaces.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Get In Touch</a>
+                    <a href="#projects" class="btn btn-outline">View My Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/tatiparthisunny" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/tatiparthisunny" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:sunny.tatiparthi@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/photo_editied.png" alt="Tatiparthi Sunny" class="animate-float">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content glass-card" style="padding: 3rem;">
+                <div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--primary);">Who I Am</h3>
+                    <p style="margin-bottom: 1.5rem;">
+                        I'm a passionate Web & App Developer with expertise in modern web technologies and UI/UX design. 
+                        I recently completed my BTech in Computer Science and am currently enhancing my skills as an 
+                        apprentice at Bharat Dynamics Limited in the ITD division.
+                    </p>
+                    <p style="margin-bottom: 2rem;">
+                        My diverse experience ranges from Internet of Robotic Things (IoRT) development to creating 
+                        beautiful user interfaces. I bring a unique combination of technical and design skills to every 
+                        project, ensuring both functionality and aesthetic appeal.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" target="_blank" class="btn">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item glass-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                    <span>Dart</span>
+                </div>
+                <div class="skill-item glass-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="skill-item glass-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg" alt="Sketch">
+                    <span>Sketch</span>
+                </div>
+                <div class="skill-item glass-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                    <span>Flutter</span>
+                </div>
+                <div class="skill-item glass-card">
+                    <img src="https://assets-global.website-files.com/6376575e9a2cc0b9e86a685c/6376575e9a2cc0e2b86a6a0f_creatie-logo-black.svg" alt="Creatie" style="filter: invert(1);">
+                    <span>Creatie</span>
+                </div>
+                <div class="skill-item glass-card">
+                    <img src="https://spline.design/_next/static/media/spline-logo.8c5a1d9c.svg" alt="Spline">
+                    <span>Spline</span>
+                </div>
+                <div class="skill-item glass-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item glass-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item glass-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" style="background: var(--card-bg);">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>Apprentice (ITD Division)</h3>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Bharat Dynamics Limited</h4>
+                        <p>Currently undergoing training in IT development, focusing on modern web and application development technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2023</span>
+                        <h3>IoRT Intern</h3>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Cantilever Labs</h4>
+                        <p>Worked on Internet of Robotic Things (IoRT) projects, developing interfaces and control systems for robotic applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2020 - 2024</span>
+                        <h3>BTech in Computer Science</h3>
+                        <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Geethanjali college of engineering And technology</h4>
+                        <p>Completed my graduation with a focus on software development, UI/UX design, and computer science fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Project Filter Buttons -->
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Websites</button>
+                <button class="filter-btn" data-filter="app">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="iot">IoT Projects</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Web Project 1 -->
+                <div class="project-card glass-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Portfolio Website">
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p>A responsive portfolio website built with HTML, CSS, and JavaScript showcasing my projects and skills.</p>
+                        <a href="https://tatiparthisunny-portfolio.netlify.app" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- App Project 1 -->
+                <div class="project-card glass-card" data-category="app">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Task Manager App">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Task Manager App</h3>
+                        <p>A cross-platform task management application built with Flutter with Firebase backend integration.</p>
+                        <a href="https://github.com/tatiparthisunny/task-manager-app" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Design Project 1 -->
+                <div class="project-card glass-card" data-category="design">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="E-commerce UI">
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">E-commerce App Design</h3>
+                        <p>Complete UI/UX design for a mobile e-commerce application with user testing and iterations.</p>
+                        <a href="https://www.figma.com/file/example-ecommerce" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- IoT Project 1 -->
+                <div class="project-card glass-card" data-category="iot">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="IoRT Project">
+                        <div class="project-tags">
+                            <span class="tag">IoRT</span>
+                            <span class="tag">Robotics</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Robotic Control Interface</h3>
+                        <p>Developed a web-based control interface for robotic systems during my internship at Cantilever Labs.</p>
+                        <a href="https://github.com/tatiparthisunny/robotic-control-interface" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Web Project 2 -->
+                <div class="project-card glass-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Weather App">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p>A weather application built with React that displays current and forecasted weather using weather API.</p>
+                        <a href="https://tatiparthisunny-weather-app.netlify.app" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- App Project 2 -->
+                <div class="project-card glass-card" data-category="app">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fitness App">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Fitness Tracker App</h3>
+                        <p>A mobile application for tracking workouts and nutrition with Firebase authentication and database.</p>
+                        <a href="https://github.com/tatiparthisunny/fitness-tracker" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mobile Development">
+                    </div>
+                    <div class="certification-details">
+                        <h3 class="certification-title">Flutter App Development</h3>
+                        <p class="certification-issuer">Udemy</p>
+                        <p class="certification-date">
+                            <i class="far fa-calendar-alt"></i> Issued May 2023
+                        </p>
+                        <a href="#" class="certification-link">View Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="UI/UX Design">
+                    </div>
+                    <div class="certification-details">
+                        <h3 class="certification-title">UI/UX Design Specialization</h3>
+                        <p class="certification-issuer">Coursera</p>
+                        <p class="certification-date">
+                            <i class="far fa-calendar-alt"></i> Issued Mar 2023
+                        </p>
+                        <a href="#" class="certification-link">View Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="3D Design">
+                    </div>
+                    <div class="certification-details">
+                        <h3 class="certification-title">Interactive 3D Design</h3>
+                        <p class="certification-issuer">Spline Academy</p>
+                        <p class="certification-date">
+                            <i class="far fa-calendar-alt"></i> Issued Jan 2023
+                        </p>
+                        <a href="#" class="certification-link">View Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section" style="background: var(--card-bg);">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem; color: var(--text-light);">
+                Feel free to reach out to me through any of these platforms. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+            <div class="contact-options">
+                <div class="contact-card glass-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/tatiparthisunny" target="_blank">linkedin.com/in/tatiparthisunny</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:sunny.tatiparthi@gmail.com">sunny.tatiparthi@gmail.com</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <i class="fab fa-github"></i>
+                    <h3>Github</h3>
+                    <a href="https://github.com/tatiparthisunny" target="_blank">@tatiparthisunny</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <a href="https://instagram.com/tatiparthisunny" target="_blank">@tatiparthisunny186</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 1rem;">
+                <i class="fas fa-code"></i>
+                <span>Tatiparthi Sunny</span>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Journey</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Tatiparthi Sunny. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
