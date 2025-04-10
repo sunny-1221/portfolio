@@ -499,14 +499,33 @@ nav {
     padding: 2rem 1rem;
     background: var(--bg);
     border-radius: 12px;
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
     box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.skill-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(71, 126, 150, 0.1), rgba(0, 181, 204, 0.1));
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
 }
 
 .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    background: var(--primary)
+}
+
+.skill-item:hover::before {
+    opacity: 1;
 }
 
 .skill-item img {
@@ -514,15 +533,36 @@ nav {
     height: 60px;
     margin-bottom: 1rem;
     object-fit: contain;
+    transition: all 0.4s ease;
+}
+
+.skill-item:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 5px 10px rgba(0, 181, 204, 0.3));
 }
 
 .skill-item span {
     font-weight: 600;
     color: var(--text);
+    transition: all 0.3s ease;
 }
 
-[data-theme="dark"] {
-    --logo-invert: 1; /* Inverts dark logos in dark mode */
+.skill-item:hover span {
+    color: #00b5cc;
+    text-shadow: 0 0 5px rgba(0, 181, 204, 0.2);
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .skill-item:hover span {
+    color: #4cc9f0;
+}
+
+[data-theme="dark"] .skill-item:hover img {
+    filter: drop-shadow(0 5px 10px rgba(76, 201, 240, 0.3));
+}
+
+[data-theme="dark"] .skill-item::before {
+    background: linear-gradient(135deg, rgba(76, 201, 240, 0.1), rgba(42, 117, 187, 0.1));
 }
 
 /* Experience Timeline */
