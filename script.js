@@ -1,8 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Set current year
+    // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Mobile menu toggle
+    // Set default theme to light mode
+    const setDefaultLightMode = () => {
+        document.body.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        document.getElementById('themeIcon').className = 'fas fa-moon';
+    };
+
+    // Initialize theme - light mode by default
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        document.getElementById('themeIcon').className = 'fas fa-sun';
+    } else {
+        setDefaultLightMode();
+    }
+
+    // Mobile menu toggle functionality
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
     const navLinksItems = document.querySelectorAll('.nav-links li');
@@ -13,6 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Burger animation
         burger.classList.toggle('toggle');
+        
+        // Toggle body overflow to prevent scrolling when menu is open
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
         
         // Animate links
         navLinksItems.forEach((link, index) => {
@@ -29,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
             burger.classList.remove('toggle');
+            document.body.style.overflow = '';
             navLinksItems.forEach(link => {
                 link.style.animation = '';
             });
@@ -37,26 +57,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Theme toggle functionality
     const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = document.getElementById('themeIcon');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    // Check for saved theme preference or use system preference
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
-        document.body.setAttribute('data-theme', 'dark');
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-    }
-    
-    // Toggle theme on button click
     themeToggle.addEventListener('click', () => {
         const isDark = document.body.getAttribute('data-theme') === 'dark';
         if (isDark) {
             document.body.removeAttribute('data-theme');
-            themeIcon.classList.replace('fa-sun', 'fa-moon');
+            document.getElementById('themeIcon').className = 'fas fa-moon';
             localStorage.setItem('theme', 'light');
         } else {
             document.body.setAttribute('data-theme', 'dark');
-            themeIcon.classList.replace('fa-moon', 'fa-sun');
+            document.getElementById('themeIcon').className = 'fas fa-sun';
             localStorage.setItem('theme', 'dark');
         }
     });
@@ -67,6 +76,13 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
+                // Close mobile menu if open
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    burger.classList.remove('toggle');
+                    document.body.style.overflow = '';
+                }
+                
                 window.scrollTo({
                     top: target.offsetTop - 80,
                     behavior: 'smooth'
@@ -97,6 +113,33 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Video hover functionality for IoT project
+    const iotProjectVideo = document.querySelector('.project-card[data-category="iot"] .project-video');
+    if (iotProjectVideo) {
+        const projectImage = iotProjectVideo.closest('.project-image');
+        let videoTimeout;
+
+        projectImage.addEventListener('mouseenter', function() {
+            // Reset and play video
+            iotProjectVideo.currentTime = 0;
+            iotProjectVideo.play();
+            
+            // Pause after 5 seconds
+            videoTimeout = setTimeout(() => {
+                iotProjectVideo.pause();
+            }, 5000);
+        });
+        
+        projectImage.addEventListener('mouseleave', function() {
+            // Clear any pending timeout
+            clearTimeout(videoTimeout);
+            
+            // Pause and reset video
+            iotProjectVideo.pause();
+            iotProjectVideo.currentTime = 0;
+        });
+    }
 
     // Scroll animations
     const animateOnScroll = () => {
@@ -135,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // Initial check
+    // Initial check for scroll animations
     animateOnScroll();
     
     // Check on scroll
@@ -148,6 +191,15 @@ document.addEventListener('DOMContentLoaded', function() {
             header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
         } else {
             header.style.boxShadow = 'none';
+        }
+    });
+
+    // Prevent scrolling when mobile menu is open
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            burger.classList.remove('toggle');
+            document.body.style.overflow = '';
         }
     });
 });
